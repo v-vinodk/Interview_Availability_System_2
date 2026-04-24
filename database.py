@@ -5,7 +5,7 @@ Three roles: HR_ADMIN, INTERVIEWER, CANDIDATE (pre-registered by HR)
 import sqlite3, uuid, hashlib, os, tempfile
 from datetime import datetime, timedelta, timezone
 
-DB_PATH = os.path.join(tempfile.gettempdir(), "interview.db")
+DB_PATH = os.path.join(tempfile.gettempdir(), "interview_v3.db")
 
 
 def get_conn():
