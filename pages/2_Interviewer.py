@@ -22,8 +22,15 @@ if st.sidebar.button("🚪 Logout"):
     st.session_state.user = None
     st.rerun()
 
-st.title(f"🎯 My Availability")
-st.caption(f"**{user['name']}** — Add your available slots for interview roles below.")
+st.markdown(f"""
+<div style='background:linear-gradient(135deg,#FFE000 0%,#FFF176 100%);
+            padding:1rem 1.5rem; border-radius:10px; margin-bottom:1rem'>
+  <h2 style='margin:0; color:#1A1A1A'>🎯 My Availability</h2>
+  <p style='margin:0; color:#333; font-size:0.9rem'>
+    {user['name']} &nbsp;·&nbsp; noon Interview Scheduling
+  </p>
+</div>
+""", unsafe_allow_html=True)
 
 # ── Load data ─────────────────────────────────────────────────────────────────
 slots    = get_slots_for_interviewer(user["id"])

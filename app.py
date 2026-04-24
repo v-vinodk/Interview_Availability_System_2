@@ -34,9 +34,16 @@ if st.session_state.user:
 
 # ── Hero ──────────────────────────────────────────────────────────────────────
 st.markdown("""
-<div style='text-align:center; padding: 2rem 0 1.5rem'>
-  <h1 style='font-size:2.6rem; margin-bottom:0.3rem'>📅 Interview Scheduler</h1>
-  <p style='color:#6B7280; font-size:1.1rem'>Simple. Fast. No confusion.</p>
+<div style='text-align:center; padding: 2rem 0 1.5rem;
+            background: linear-gradient(135deg,#FFE000 0%,#FFF176 100%);
+            border-radius:12px; margin-bottom:1.2rem'>
+  <span style='font-size:2.2rem'>📅</span>
+  <h1 style='font-size:2.4rem; margin:0.2rem 0; color:#1A1A1A'>Interview Scheduler</h1>
+  <p style='color:#333; font-size:1rem; margin:0'>
+    Powered by &nbsp;<strong style='color:#1A1A1A'>noon</strong>
+    <span style='background:#1A1A1A; color:#FFE000;
+                 padding:1px 7px; border-radius:4px; font-size:0.85rem; margin-left:4px'>HR</span>
+  </p>
 </div>
 """, unsafe_allow_html=True)
 
